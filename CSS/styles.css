@@ -18,6 +18,7 @@ footer {
     font-family: Arial;
     color: black;
     text-align: center;
+    font-size:10px;
 }
 
 .img.thumbnail {
@@ -40,6 +41,7 @@ footer {
 
 .navbar.navbar-default{
     height:100%;
+    padding-right: 30px;
 }
 
 .calendar{
@@ -62,61 +64,104 @@ footer {
     text-align:center;
 }
 
-p.pagetext {
+.pagetext {
     text-align:center;
 }
 
-.iframe:hover {
-    opacity:0.5;
-}
-.iframe {
-    border:5px #5ad73a solid;
-    border-radius:2%;
-   
-}
 
+.iframe {
+    display: block;
+  width: 100%;
+}
 
 .iframeoverlay {
-    display:none;
+position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  height: 100%;
+  width:100%;
+  transition: .5s ease;
+  background-color: black;
+}
+
+.example {
+     position: relative;
+  width: 50%;
+}
+.example:hover .iframeoverlay {
+  opacity: 0.5;
+}
+
+.overlaytext {
+    font-size:17px;
+    position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+     -ms-transform: translate(-50%, -50%);
+}
+
+#examplelink {
+    color:white;
     font-family:'Archivo', sans-serif;
-    position:absolute;
-    top:50%;
-    z-index:1;
-    width:100%;
-    height:300px;
-    text-align:center;
-
-   
 }
 
-.iframe:hover + .iframeoverlay{
-    display:block;
-  
-}
-
-.overlaylink {
-    width:100%;
-    height:300px;
-    z-index:2;
-}
 
 .hometext {
     text-align:center;
 }
 
-#hometext {
-    padding-bottom:10%;
-}
 
-#progressexample {
+
+.progressexample {
     padding:5%;
 }
 
-.navbar-nav>li>a.navigation {
-    padding-top: 35%;
-    line-height: 100%;
+.google{
+    width:100% ;
+    height:650px ;
+    border:0px;
+    overflow: auto;
+    
+    
 }
+
+
+.navbar-nav>li>a.navigation {
+    width: 165px;
+    padding-bottom: 10%;
+    padding-top: 15%;
+    color: black  !important;
+}
+
 
 ul.nav li.dropdown:hover>ul.dropdown-menu {
     display: block;
 }
+
+    
+#navgradient {
+  background: linear-gradient(to right, #87E054, #E7FCDB);
+  
+}
+.examplegradient {
+    background: linear-gradient(to right, #87E054, #E7FCDB);
+    height:8px;
+    width:450px;
+}
+
+
+a.navigation:active {
+    font-weight:bolder;
+}
+
+
+.navbar-nav>li>a.navigation:hover {
+    background-color:#E7FCDB;
+    
+}
+
+

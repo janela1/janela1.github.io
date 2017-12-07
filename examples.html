@@ -5,7 +5,6 @@
      <title>COMP126</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="CSS/styles.css" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link href="CSS/styles.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Archivo" rel="stylesheet">
@@ -17,30 +16,30 @@
 
 <body>
     <!--sign in, contact, rate-->
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default" id="navgradient">
         <div class="container-fluid">
             <ul class="nav navbar-nav">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="https://sakai.unc.edu/portal" target="_blank">Sakai</a></li>
                 <li class ="dropdown">
-                    <a class ="dropdown-toggle" data-toggle="dropdown" href="contact.html">contact<b class="caret"></b></a>
+                    <a class ="dropdown-toggle" data-toggle="dropdown" href="contact.html">Email Addresses<b class="caret"></b></a>
                     <ul class = "dropdown-menu">
-                    <li><a href= "#">Instructor</a></li>
-                    <li><a href= "#">TA1</a></li>
-                    <li><a href= "#">TA2</a></li>  
+                    <li><a href="mailto:nicholas@cs.unc.edu">Instructor</a></li>
+                    <li><a href= "mailto:hvh@live.unc.edu">TA: Helen Hansen</a></li>
+                    <li><a href= "mailto:jiayi312@live.unc.edu">TA: Ivy Liu</a></li>  
                     </ul>
                 </li>
-                <li ><a href="contact.html">rate</a></li>
+                <li ><a href="Resources/syllabus.pdf" target="_blank">Syllabus</a></li>
             </ul>
         </div>
     </nav>
-     
+    
     <!--logo, title-->
     <div class="container">
         <div class="row display-flex">
             <div class="col-md-2">
                 <img src="image/logo.png" class="img thumbnail" alt="logo" width="150" height="120"> 
             </div>
-            <div class="col-md-10 title">
+            <div class="col-md-8 title">
                 <h1>Web Development and Design for Everyone!</h1>    
             </div>
         </div>
@@ -53,14 +52,14 @@
             <div class="col-md-2">
                 <nav class="navbar navbar-default navigation">
                         <ul class="nav navbar-nav">
-                            <li><a class="navigation" href="index.html"><i class="fa fa-home"></i><span> Home </span></a></li>
-                            <li><a class="navigation" href="calendar.html"><i class="fa fa-calendar"></i><span> Calendar </span></a></li>
-                            <li><a class="navigation" href="examples.html"><i class="fa fa-heart"></i><span> Examples </span></a></li>
-                            <li><a class="navigation" href="resources.html"><i class="fa fa-folder-open"></i><span> Resources </span></a></li>
+                            <li><a class="navigation" href="index.html"><i class="fa fa-home"></i>Home</a></li>
+                            <li><a class="navigation" href="calendar.html"><i class="fa fa-calendar"></i> Calendar</a></li>
+                            <li class="active"><a class="navigation" href="examples.html"><i class="fa fa-heart"></i>Examples </a></li>
+                            <li><a class="navigation" href="resources.html"><i class="fa fa-folder-open"></i> Resources </a></li>
                         </ul>
                 </nav>    
             </div>
-            <div class="col-md-10 col">
+            <div class="col-md-8 col">
                 <img src="image/classroom.png" class="classroom" alt="classroom"> 
             </div>
         </div>
@@ -69,32 +68,23 @@
  <br>
  <br>   
 
-<div class="row">
-    <div class="col-md-2">
-    </div>
-    <div class="col-md-8">
-    <p class="pagetext">This is the progress examples page. This page lets you know what you can expect to have learned 1/4 through, halfway, 3/4 through, and by the end of the semester! Read about what to expect at each timepoint in the descriptions at left, then click on the iFrame at right to expand the code editor in a new page to see an example. Try messing around with the code - the preview will update in real time! Another thing to consider is that this website itself is a culmination of all the things you can gain from taking COMP126, as it was completely coded by two alumni of the course!</p>
-    </div>
-    <div class="col-md-2">
-    </div>
-</div>
+<hr>
 
-<hr />
+<!--examples begin-->
 
-
-<div class="row" id="progressexample">
+<div class="row progressexample">
     <div class="col-md-1">
     </div>
 
 <div class="col-md-4">
     <h2>First 1/4 of the Semester</h2>
-    <p>To start off the course, we first learned about the history of the internet and how it actually works. After setting the stage that way, Dr. Joseph-Nichols started us off with the bare basics of HTML (not CSS yet). We learned the components of the language first, like learning common elements, semantic tagging, and knowing what to include in a code layout. After we could successfully make things appear in a browser (which requires learning how to format files correctly), we ended this portion of the semester by learning the more intricate features that HTML offers. One such example can be seen at right, when we learned how to create a form with multiple types of user input, such as text boxes, radio buttons, and drop-down selections.</p>
+    <p>To start off the course, we first learned about the history of the internet and how it actually works. After setting the stage that way, Dr. Joseph-Nicholas started us off with the bare basics of HTML (not CSS yet). We learned the components of the language first, like learning common elements, semantic tagging, and knowing what to include in a code layout. After we could successfully make things appear in a browser (which requires learning how to format files correctly), we ended this portion of the semester by learning the more intricate features that HTML offers. One such example can be seen at right, when we learned how to create a form with multiple types of user input, such as text boxes, radio buttons, and drop-down selections.</p>
     </div>
 
-    
-    <div class="col-md-6"">
-        <iframe src="https://codepen.io/anon/pen/RjEXoR?editors=1000#0" width=100% height=300px class="iframe"></iframe>
-       <div class="iframeoverlay" width=100% height=300px>Click <a href="https://codepen.io/anon/pen/RjEXoR?editors=1000#0" class="overlaylink">HERE</a> to expand in a new window</div>
+    <div class="col-md-6 example">
+        <iframe src="https://codepen.io/anon/pen/RjEXoR?editors=1000#0" class="iframe" allowtransparency="true" allowfullscreen="true" frameborder="no" height="300px" width="100%"></iframe>
+       <div class="iframeoverlay">
+       <div class="overlaytext"><a href="https://codepen.io/anon/pen/RjEXoR?editors=1000#0" target="blank" id="examplelink">Click here to expand in a new window</a></div></div>
     </div>
 
     <div class="col-md-1">
@@ -102,9 +92,9 @@
 
 </div>
 
+<div class="examplegradient center-block"></div>
 
-
-<div class="row" id="progressexample">
+<div class="row progressexample">
     <div class="col-md-1">
     </div>
 
@@ -113,16 +103,21 @@
     <p>After getting comfortable with the HTML basics, Dr. Joseph-Nicholas then introduced CSS. With CSS styling, we were able to transform our ugly default HTML browser setttings into unique, customizable pages! We learned about how to implement a style sheet, how to structure the code, and about many useful and important CSS style attributes! For example, if you look at the example at right, we learned how to customize a table, the bare bones of which is coded in HTML. When incorporating CSS, you can change the fonts, sizing and alignment of cells, the page background, borders, and a million other things you probably didn't know existed!</p>
     </div>
 
-    <div class="col-md-6">
-        <iframe src="https://codepen.io/anon/pen/zPygmO?editors=1100" width=100% height=300px class="iframe"></iframe>
-        <div class="iframeoverlay">Click HERE to expand in a new window</div>
+
+ <div class="col-md-6 example">
+        <iframe src="https://codepen.io/anon/pen/zPygmO?editors=1100" class="iframe" allowtransparency="true" allowfullscreen="true" frameborder="no" height="300px" width="100%"></iframe>
+       <div class="iframeoverlay">
+       <div class="overlaytext"><a href="https://codepen.io/anon/pen/zPygmO?editors=1100" target="blank" id="examplelink">Click here to expand in a new window</a></div></div>
     </div>
 
-    <div class="col-md-2">
+
+    <div class="col-md-1">
     </div>
 </div>
 
-<div class="row" id="progressexample">
+<div class="examplegradient center-block"></div>
+
+<div class="row progressexample">
     <div class="col-md-1">
     </div>
 <div class="col-md-4">
@@ -130,16 +125,21 @@
     <p>Now that we had our grip on HTML and CSS together, it was time to learn how to actually effectively make a page layout. The major way we accomplished this was by learning through the Box Model and new HTML5 attributes. Because you have to understand how elements are contained and have a good mental map of the page to know how something might be affected, this is where the code becomes a little harder to implement. An example of a layout that incorporates CSS styling, images, and form inputs can be seen at right. A quick hint for this portion of the class: divs are key, and do the majority (if not all) of your styling in your CSS sheet instead of the HTML document! </p>
     </div>
 
-    <div class="col-md-6">
-        <iframe src="https://codepen.io/anon/pen/jadNBj?editors=1100#0" width=100% height=300px  class="iframe"></iframe>
-        <div class="iframeoverlay">Click HERE to expand in a new window</div>
+ <div class="col-md-6 example">
+        <iframe src="https://codepen.io/anon/pen/jadNBj?editors=1100#0" class="iframe" allowtransparency="true" allowfullscreen="true" frameborder="no" height="300px" width="100%"></iframe>
+       <div class="iframeoverlay">
+       <div class="overlaytext"><a href="https://codepen.io/anon/pen/jadNBj?editors=1100#0" target="blank" id="examplelink">Click here to expand in a new window</a></div></div>
     </div>
+
 
     <div class="col-md-1">
     </div>
 </div>
 
-<div class="row" id="progressexample">
+
+<div class="examplegradient center-block"></div>
+
+<div class="row progressexample">
     <div class="col-md-1">
     </div>
 
@@ -148,9 +148,10 @@
     <p>This brings us to the last portion of the semester. Familiarity with creating layouts allowed us to learn about more current code for web developers. For example, Bootstrap is a popular source for web developers that allows you to utilize many preset attributes common in the modern webpage without having to do a bunch of styling in CSS. We learned how to properly link our HTML documents to the Bootstrap server, how to customize preset styling, and how to create responsive layouts using their grid system. An example of this can be see at right. This layout is built to be responsive on screens as small as a phone!</p>
     </div>
 
-    <div class="col-md-6">
-        <iframe src="https://codepen.io/anon/pen/YEBKxe?editors=1100" width=100% height=300px class="iframe"></iframe>
-        <div class="iframeoverlay">Click HERE to expand in a new window</div>
+ <div class="col-md-6 example">
+        <iframe src="https://codepen.io/anon/pen/YEBKxe?editors=1100" class="iframe" allowtransparency="true" allowfullscreen="true" frameborder="no" height="300px" width="100%"></iframe>
+       <div class="iframeoverlay">
+       <div class="overlaytext"><a href="https://codepen.io/anon/pen/YEBKxe?editors=1100" target="blank" id="examplelink">Click here to expand in a new window</a></div></div>
     </div>
 
     <div class="col-md-1">
@@ -158,7 +159,10 @@
 </div>
 
 
-<hr />
-</body>
+<hr>
+
 <footer>Computer Science Department | University of North Carolina at Chapel Hill | 2017</footer>
+
+
+</body> 
 </html>
